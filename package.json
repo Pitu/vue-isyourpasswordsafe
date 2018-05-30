@@ -1,6 +1,6 @@
 {
   "name": "vue-isyourpasswordsafe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A small utility written in Vue that checks if the given password has been leaked against the Have I Been Pawned API",
   "repository": "Pitu/vue-isyourpasswordsafe",
   "author": {

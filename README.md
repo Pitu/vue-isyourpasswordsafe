@@ -14,9 +14,9 @@ Developers should start making sure that their users don't use compromised passw
 
 ### Installation
 ```bash
-yarn add vue-hibp
+yarn add vue-isyourpasswordsafe
 # or
-npm i vue-hibp
+npm i vue-isyourpasswordsafe
 ```
 
 ### Usage
