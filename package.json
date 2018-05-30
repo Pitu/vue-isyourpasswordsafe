@@ -1,0 +1,77 @@
+{
+  "name": "vue-isyourpasswordsafe",
+  "version": "1.0.0",
+  "description": "A small utility written in Vue that checks if the given password has been leaked against the Have I Been Pawned API",
+  "repository": "Pitu/vue-isyourpasswordsafe",
+  "author": {
+    "name": "Pitu",
+    "url": "https://github.com/Pitu",
+    "email": "heyitspitu@gmail.com"
+  },
+  "scripts": {
+    "dev": "poi example/index.js",
+    "pages": "poi build example/index.js",
+    "build": "bili src/index.js --plugin vue --format umd,cjs,es --exports named --module-name vueisyourpasswordsafe"
+  },
+  "license": "MIT",
+  "keywords": [
+    "password",
+    "vue",
+    "pwned",
+    "hibp",
+    "security"
+  ],
+  "main": "dist/vue-isyourpasswordsafe.cjs.js",
+  "module": "dist/vue-isyourpasswordsafe.es.js",
+  "unpkg": "dist/vue-isyourpasswordsafe.js",
+  "cdn": "dist/vue-isyourpasswordsafe.js",
+  "jsdelivr": "dist/vue-isyourpasswordsafe.js",
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "bili": "^3.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-aqua": "^4.3.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "poi": "^10.2.1",
+    "rollup-plugin-vue": "2",
+    "sha1": "^1.1.1",
+    "vue-eslint-parser": "^2.0.3",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "eslintConfig": {
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "extends": [
+      "plugin:vue/recommended",
+      "aqua"
+    ],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "func-names": 0,
+      "capitalized-comments": 0,
+      "max-len": 0,
+      "id-length": 0,
+      "vue/html-indent": [
+        "error",
+        "tab"
+      ],
+      "vue/max-attributes-per-line": [
+        2,
+        {
+          "singleline": 1,
+          "multiline": {
+            "max": 1,
+            "allowFirstLine": true
+          }
+        }
+      ],
+      "vue/attribute-hyphenation": 0
+    }
+  },
+  "dependencies": {}
+}
