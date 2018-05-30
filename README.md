@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="https://lolisafe.moe/lBEJUz6y.png" />
+	<img src="https://lolisafe.moe/1mwg444C.png" />
 </div>
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/Pitu/vue-isyourpasswordsafe/master/LICENSE)
