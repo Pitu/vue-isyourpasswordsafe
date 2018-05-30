@@ -49,7 +49,7 @@ const isSafe = await this.$isPasswordSafe(this.myStrongPassword);
 
 ## Author
 
-**vue-hibp** © [Pitu](https://github.com/Pitu), Released under the [MIT](https://github.com/Pitu/vue-hibpisyourpasswordsafe/blob/master/LICENSE) License.<br>
+**vue-isyourpasswordsafe** © [Pitu](https://github.com/Pitu), Released under the [MIT](https://github.com/Pitu/vue-isyourpasswordsafe/blob/master/LICENSE) License.<br>
 Authored and maintained by Pitu.
 
-> GitHub [@Pitu](https://github.com/Pitu)
+> GitHub [@Pitu](https://github.com/Pitu) · Twitter [@Pitu](https://twitter.com/its_pitu)
