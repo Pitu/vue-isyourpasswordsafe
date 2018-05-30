@@ -39,6 +39,10 @@ If you are using another package to manage UI or don't want to use our own compo
 const isSafe = await this.$isPasswordSafe(this.myStrongPassword);
 ```
 
+## Notable sites using Vue-IsYourPasswordSafe
+- [lolisafe.moe](https://lolisafe.moe): A small safe worth protecting. (On next release)
+- Feel free to add yours here!
+
 ## Contributing
 
 1. Fork it
