@@ -2,6 +2,8 @@
 	<img src="https://lolisafe.moe/1mwg444C.png" />
 </div>
 
+[![NPM version](https://img.shields.io/npm/v/vue-isyourpasswordsafe.svg?style=flat-square)](https://npmjs.com/package/vue-isyourpasswordsafe)
+[![NPM downloads](https://img.shields.io/npm/dm/vue-isyourpasswordsafe.svg?style=flat-square)](https://npmjs.com/package/vue-isyourpasswordsafe)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/Pitu/vue-isyourpasswordsafe/master/LICENSE)
 [![Chat / Support](https://img.shields.io/badge/Chat%20%2F%20Support-discord-7289DA.svg?style=flat-square)](https://discord.gg/5g6vgwn)
 
