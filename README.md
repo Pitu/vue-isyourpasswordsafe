@@ -6,6 +6,8 @@
 [![NPM downloads](https://img.shields.io/npm/dm/vue-isyourpasswordsafe.svg?style=flat-square)](https://npmjs.com/package/vue-isyourpasswordsafe)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/Pitu/vue-isyourpasswordsafe/master/LICENSE)
 [![Chat / Support](https://img.shields.io/badge/Chat%20%2F%20Support-discord-7289DA.svg?style=flat-square)](https://discord.gg/5g6vgwn)
+[![Support me](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2Fpitu&style=flat-square)](https://www.patreon.com/pitu)
+[![Support me](https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/kana)
 
 ### Introduction
 Troy Hunt has repeatedly made a wonderful job keeping up with good security measures regarding personal data, more specificaly making the site [Have I Been Pwned](https://haveibeenpwned.com). On his latest [blog post](https://www.troyhunt.com/pwned-passwords-in-practice-real-world-examples-of-blocking-the-worst-passwords/) he explains a new technique to search through the database of leaked passwords in a smart and fast way giving developers a tool to ensure that a user is not signing up their projects with compromised passwords.
