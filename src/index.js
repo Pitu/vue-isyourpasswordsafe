@@ -15,7 +15,7 @@ export const install = (Vue, opts) => {
 		/*
 			If the password doesn't meet the pre-requisites let's just stop
 		*/
-		if (!password || password.length < opts.minLenght || password.length > opts.maxLength) return;
+		if (!password || password.length < opts.minLength || password.length > opts.maxLength) return;
 
 		/*
 			Hash the password and send the first 5 characters to the API.
