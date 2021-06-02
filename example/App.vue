@@ -3,28 +3,45 @@
 		<GitHubLogo />
 		<h2>Create an account demo</h2>
 		<input type="text" placeholder="Your username">
-		<vue-isyourpasswordsafe v-model="myStrongPassword"
-			placeholder="Your password"
-			@onFinishedChecking="isPasswordSafe"/>
-		<input type="password" placeholder="Retype your password">
-		<input type="email" placeholder="Your email">
+		<input
+			v-model="password"
+			v-ispasswordsafe
+			@safe="isPasswordSafe"
+			type="password"
+			placeholder="Your password">
 
 		<h4 v-if="isSafe">Your password should be good to go :)</h4>
 		<h4 v-if="isSafe === false"
 			class="error">Your password has been leaked and you <b>shouldn't</b> use it!</h4>
+
+		<h3>Implementation in this example:</h3>
+		<pre>
+			{{ code }}
+		</pre>
 	</div>
 </template>
 <script>
-import GitHubLogo from './GithubLogo';
+import GitHubLogo from './GithubLogo.vue';
 export default {
 	components: {
 		GitHubLogo
 	},
 	data() {
 		return {
-			myStrongPassword: null,
-			isSafe: null
+			isSafe: null,
+			password: null,
+			code: `
+<input
+	v-model="password"
+	v-ispasswordsafe
+	@safe="isPasswordSafe"
+	type="password"
+	placeholder="Your password">`
 		};
+	},
+	async mounted() {
+		const isSafe = await this.$isPasswordSafe('test');
+		console.log(isSafe); // Spoiler alert: it isn't.
 	},
 	methods: {
 		isPasswordSafe(val) {
@@ -84,6 +101,15 @@ export default {
 		text-decoration: underline;
 	}
 
+	h3 {
+		font-size: 16px;
+    	margin-top: 2rem;
+	}
+
+	h4 {
+		color: green;
+	}
+
 	div#app .error {
 		color: #ce0505;
 	}
@@ -109,5 +135,22 @@ export default {
 		.github-corner .octo-arm {
 			animation: octocat-wave 560ms ease-in-out
 		}
+	}
+	pre {
+		margin: 0;
+		width: 306px;
+		padding: 0 2rem;
+		background: #f4f4f4;
+		border: 1px solid #dbdbdb;
+		border-left: 2px solid black;
+		color: #666;
+		page-break-inside: avoid;
+		font-family: monospace;
+		font-size: 14px;
+		line-height: 1.6;
+		max-width: 100%;
+		overflow: auto;
+		display: block;
+		word-wrap: break-word;
 	}
 </style>

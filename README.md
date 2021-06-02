@@ -12,7 +12,7 @@
 ### Introduction
 Troy Hunt has repeatedly made a wonderful job keeping up with good security measures regarding personal data, more specificaly making the site [Have I Been Pwned](https://haveibeenpwned.com). On his latest [blog post](https://www.troyhunt.com/pwned-passwords-in-practice-real-world-examples-of-blocking-the-worst-passwords/) he explains a new technique to search through the database of leaked passwords in a smart and fast way giving developers a tool to ensure that a user is not signing up their projects with compromised passwords.
 
-Developers should start making sure that their users don't use compromised passwords, and by dropping this component on your form you can take the first step into achieving that.
+Developers should start making sure that their users don't use compromised passwords, and by using this directive on your inputs you can take the first step into achieving that.
 
 ### Installation
 ```bash
@@ -22,27 +22,24 @@ npm i vue-isyourpasswordsafe
 ```
 
 ### Usage
-All you need to do is initialize the component and specify the min and max length of password you want to enable. If these requirements are not met, the package won't validate the password.
+All you need to do is initialize the plugin to be able to use the directive or the custom method explained below.
 ```js
 import VueIsYourPasswordSafe from 'vue-isyourpasswordsafe'
-Vue.use(VueIsYourPasswordSafe, {
-    minLength: 8,
-    maxLength: 64
-});
+Vue.use(VueIsYourPasswordSafe);
 ```
 
-Make sure to check [the example](https://pitu.github.io/vue-isyourpasswordsafe/), but once loaded you can use our own component like this:
+Make sure to check [the example](https://pitu.github.io/vue-isyourpasswordsafe/), but once loaded you can use it in your own component and react to the emitted `@safe` event to check for the boolean result:
 ```html
-<vue-isyourpasswordsafe v-model="myStrongPassword" @onFinishedChecking="isPasswordSafe"/>
+<input v-model="password" v-ispasswordsafe @safe="isPasswordSafe"
 ```
 
-If you are using another package to manage UI or don't want to use our own component, you can always manually check for a password with the Vue.prototype method:
+You can also manually check for a password with the Vue.prototype method programatically:
 ```js
-const isSafe = await this.$isPasswordSafe(this.myStrongPassword);
+const isSafe = await this.$isPasswordSafe('test');
 ```
 
 ## Notable sites/projects using Vue-IsYourPasswordSafe
-- [**lolisafe**](https://github.com/WeebDev/lolisafe) - Blazing fast file uploader and awesome bunker written in node! 🚀
+- [**chibisafe**](https://github.com/WeebDev/chibisafe) - Blazing fast file uploader and awesome bunker written in node! 🚀
 - Feel free to add yours here!
 
 ## Contributing
