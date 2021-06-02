@@ -21,6 +21,9 @@ yarn add vue-isyourpasswordsafe
 npm i vue-isyourpasswordsafe
 ```
 
+### Breaking changes in v2.0.0
+Before v2.0.0 this plugin offered a custom component that has now been deprecated in favor of a directive.
+
 ### Usage
 All you need to do is initialize the plugin to be able to use the directive or the custom method explained below.
 ```js
