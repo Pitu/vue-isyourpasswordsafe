@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "poi --serve example/index.js",
-    "pages": "poi build example/index.js",
+    "pages": "poi --out-dir pages --prod --public-url /vue-isyourpasswordsafe example/index.js",
     "build": "bili src/index.ts --plugin vue --format umd,cjs,es --exports named --module-name vueisyourpasswordsafe"
   },
   "license": "MIT",

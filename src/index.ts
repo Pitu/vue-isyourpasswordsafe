@@ -40,7 +40,7 @@ export const install = (Vue: any) => {
 			Hash the password and send the first 5 characters to the API.
 		*/
 		const hashedPassword = sha1(password).toUpperCase();
-		const url = `https://api.pwnedpasswords.com/range/${hashedPassword.slice(0, 5) as string}`;
+		const url = `https://api.pwnedpasswords.com/range/${hashedPassword.slice(0, 5)}`;
 
 		try {
 			const response = await fetch(url, {
